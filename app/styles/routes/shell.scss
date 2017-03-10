@@ -1,0 +1,42 @@
+#shell {
+
+  .user-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .mobile-doubleplay {
+    width:100%;
+    height:100vh;
+    top:0;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .nav-item {
+    transition: $hover-duration $hover-timing-function;
+    &:hover {
+      background-color: darken(color('white'), 5%);
+       &+.nav-item-border {
+        width: 100% !important;
+        border-color: color('gray-mid');
+        background-color: color('gray-mid');
+        height: 3px;
+      }
+    }
+  }
+  .pad-player {
+    padding-top: $sm-header-height;
+    @media #{$lg} {
+      padding-top: $lg-header-height;
+    }
+  }
+  .content-width {
+    width: 100%;
+
+    @media #{$lg} {
+      width: $content-width;
+    }
+  }
+}

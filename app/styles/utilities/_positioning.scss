@@ -1,0 +1,58 @@
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; will-change: transform; }
+
+.t0 { top: 0; }
+.l0 { left: 0; }
+.r0 { right: 0; }
+.b0 { bottom: 0; }
+
+/* display */
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline-block-fix { font-size: 0; }
+.table-row { display: table-row; }
+.table-cell { display: table-cell; vertical-align: middle; }
+.no-stretch { width: 1%; white-space: nowrap;}
+.table {
+  display: table;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* floats */
+.left { float: left; }
+.right { float: right; }
+.oh { overflow: hidden; }
+.ov { overflow: visible; }
+.os { overflow: scroll; }
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/* use these sparingly, no excuses for bad HTML! */
+.up-1 { position: relative; top: -0.1rem; }
+.up-2 { position: relative; top: -0.2rem; }
+.up-3 { position: relative; top: -0.3rem; }
+.up-4 { position: relative; top: -0.4rem; }
+.up-5 { position: relative; top: -0.5rem; }
+.down-1 { position: relative; top: 0.1rem; }
+.down-2 { position: relative; top: 0.2rem; }
+.down-3 { position: relative; top: 0.3rem; }
+.down-4 { position: relative; top: 0.4rem; }
+.down-5 { position: relative; top: 0.5rem; }
+
+.z1 { z-index: 1; }
+.z2 { z-index: 2; }
+.z3 { z-index: 3; }
+.z4 { z-index: 4; }
+.z5 { z-index: 5; }
+
+.flex { display: flex; }
+
+.space-around { justify-content: space-around; }
+.space-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+
+.align-center { align-items: center; }

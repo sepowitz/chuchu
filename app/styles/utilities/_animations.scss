@@ -1,0 +1,6 @@
+.hover {
+  transition: $hover-duration $hover-timing-function;
+  &:hover {
+    opacity: .8;
+  }
+}

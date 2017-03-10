@@ -1,0 +1,7 @@
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media only screen and #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+}

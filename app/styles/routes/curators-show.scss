@@ -1,0 +1,83 @@
+#curators-show {
+  .avatar-wrapper {
+    .avatar {
+      background-size: 150px;
+      background-position: 50% 50%;
+      height: 30rem;
+
+      @media #{$lg} {
+        margin: 0 auto;
+        height: 35vh;
+        min-height: 300px;
+        min-width: 32vw;
+        max-width: 55vh;
+      }
+    }
+
+    @media #{$md} {
+      display: table-cell;
+    }
+  }
+
+  .member-join-date-wrapper {
+    height: 20px;
+    @media #{$md} {
+      display: table-cell;
+      .member-join-date {
+        top: 50%;
+        transform: rotate(-90deg) translateY(-50%);
+        left: -13rem;
+        width: 30rem;
+      }
+    }
+  }
+
+  .member-location {
+    transform: rotate(90deg) translateY(50%);
+    right: -14rem;
+    width: 30rem;
+  }
+
+  .post-toggle {
+    &.selected {
+      span {
+        width: 1px;
+        height: 176px;
+        top: 16px;
+        position: absolute;
+        background: black;
+        left: 50%;
+
+        @media #{$lg} {
+          height: 95px;
+        }
+      }
+    }
+  }
+
+  .all-curators-text {
+    padding-bottom: 1rem;
+    @media #{$md} {
+      padding-bottom: 0;
+    }
+  }
+
+  .post-month {
+    transform: rotate(-90deg);
+  }
+
+  .date-block {
+    &.fixed-top {
+      position: fixed;
+      top: $lg-header-height;
+      left: calc(#{$sidebar-width} + 11.95%);
+      // transform: translateX(-50%);
+    }
+    &.absolute-bottom {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: translateY(-100%);
+    }
+  }
+}

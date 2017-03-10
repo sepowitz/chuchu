@@ -1,0 +1,43 @@
+.border-thin {
+  border-style: solid;
+  border-width: $border-width-thin;
+}
+.bb-thin {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width-thin;
+}
+.bt-thin {
+  border-top-style: solid;
+  border-top-width: $border-width-thin;
+}
+.br-thin {
+  border-right-style: solid;
+  border-right-width: $border-width-thin;
+}
+.bl-thin {
+  border-left-style: solid;
+  border-left-width: $border-width-thin;
+}
+
+.border-thick {
+  border-style: solid;
+  border-width: $border-width-thick;
+}
+.bb-thick {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width-thick;
+}
+.bt-thick {
+  border-top-style: solid;
+  border-top-width: $border-width-thick;
+}
+.br-thick {
+  border-right-style: solid;
+  border-right-width: $border-width-thick;
+}
+.bl-thick {
+  border-left-style: solid;
+  border-left-width: $border-width-thick;
+}
+
+.circle { border-radius: 50%; }

@@ -1,0 +1,12 @@
+.pointer { cursor: pointer; }
+.default { cursor: default; }
+.p-events-none { pointer-events: none };
+.list-reset{ list-style: none; padding-left: 0; }
+.bw { filter: grayscale(100%); }
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

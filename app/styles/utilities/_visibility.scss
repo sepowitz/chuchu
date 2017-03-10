@@ -1,0 +1,37 @@
+.show { display: block; }
+.hide { display: none; }
+
+.show-inbl { display: inline-block; }
+
+.md-show-block,
+.md-show-table,
+.md-show-cell,
+.md-show-inline-block,
+
+.lg-show-block,
+.lg-show-table,
+.lg-show-cell,
+.lg-show-inline-block {
+  display: none;
+}
+
+.md-hide-block,
+.lg-hide-block {
+  display: block;
+}
+
+@media #{$md} {
+  .md-show-block, .md-display-block { display: block; }
+  .md-show-table, .md-display-table { display: table; }
+  .md-show-cell, .md-display-cell { display: table-cell; }
+  .md-show-inline-block, .md-display-inline-block { display: inline-block; }
+  .md-hide-block { display: none; }
+}
+
+@media #{$lg} {
+  .lg-show-block, .lg-display-block { display: block; }
+  .lg-show-table, .lg-display-table { display: table; }
+  .lg-show-cell, .lg-display-cell { display: table-cell; }
+  .lg-show-inline-block, .lg-display-inline-block { display: inline-block; }
+  .lg-hide-block { display: none; }
+}

@@ -1,0 +1,90 @@
+/* WHITESPACE
+----------------------------------------*/
+$space-base: 1;
+$whitespace: (
+  0: 0,
+  1: calc(#{$space-base} * 0.5rem),
+  2: calc(#{$space-base} * 1rem),
+  3: calc(#{$space-base} * 2rem),
+  4: calc(#{$space-base} * 4rem),
+);
+
+
+/* TYPOGRAPHY
+----------------------------------------*/
+$font-regular: 'apercuregular', sans-serif;
+$font-bold: 'apercubold', sans-serif;
+$type-base: 1;
+$scale: (
+  1: calc(#{$type-base} * 2rem),
+  2: calc(#{$type-base} * 1.5rem),
+  3: calc(#{$type-base} * 1.25rem),
+  4: calc(#{$type-base} * 1rem),
+  5: calc(#{$type-base} * 0.875rem),
+  6: calc(#{$type-base} * 0.65rem),
+);
+
+
+/* GRID
+----------------------------------------*/
+$columns: 12;
+$sm: (min-width: 36em);
+$md: (min-width: 48em);
+$lg: (min-width: 60em);
+$xl: (min-width: 72em);
+$xx: (min-width: 84em);
+$breakpoints: (
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+);
+
+
+/* COLORS
+----------------------------------------*/
+$gray-base: #000;
+$colors: (
+  'black':     $gray-base,
+  'gray-mid':  lighten($gray-base, 50%),
+  'gray-dark': lighten($gray-base, 20%),
+  'white':     lighten($gray-base, 100%),
+  'fog':       rgba(0,0,0,.5),  
+  'blood':     #AC1818,
+  'apple':     #B91122,
+  'raspberry': #BB1043,
+  'smoke':     #F7F5F7,
+  'slush':     #E6E7E8,
+  'slate':     #414042,
+  'mud':       #555555,
+  'haze':      #999999,
+  'clouds':    #cccccc,
+);
+
+
+/* INPUTS
+----------------------------------------*/
+$input-border-color: #000;
+$input-border-radius: 0;
+
+
+/* BORDERS
+----------------------------------------*/
+$border-width-thick: 4px;
+$border-width-thin: 1px;
+
+
+/* VARIABLES
+----------------------------------------*/
+$sm-header-height: 4.2rem;
+$lg-header-height: 4.625rem;
+$sidebar-width: 4.5rem;
+$content-width: calc(100% - #{$sidebar-width});
+$form-field-padding-y: 0.8rem; 
+$form-field-padding-x: 1.6rem;
+$form-field-height: 2.9375rem;
+
+
+/* TRANSITIONS
+----------------------------------------*/
+$hover-duration: 250ms;
+$hover-timing-function: ease-in-out;

@@ -1,0 +1,56 @@
+#shell-index {
+  .posts-tab {
+    hr {
+      display: none;
+    }
+    &.selected {
+      text-decoration: underline;
+    }
+
+    @media #{$lg} {
+      hr {
+        display: none;
+        display: block;
+        border-style: solid;
+        position: absolute;
+        top: 100%;
+        transform: rotate(-90deg) translate(-50%, 20px);
+        width: 25px;
+        opacity: 0;
+        right: 50%;
+      }
+      &.selected {
+        text-decoration: none;
+        hr {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .post-month {
+    transform: rotate(-90deg);
+  }
+
+  .chatroom {
+    @media #{$lg} {
+      position: relative;
+      top: 75vh;
+    }
+  }
+
+  .date-block {
+    &.fixed-top {
+      position: fixed;
+      top: $lg-header-height;
+      left: calc(#{$sidebar-width} + 11.95%);
+      // transform: translateX(-50%);
+    }
+    &.absolute-bottom {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: translateY(-100%);
+    }
+  }
+}

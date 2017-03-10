@@ -1,0 +1,20 @@
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  background-color: color('smoke');
+  font-family: $font-regular;
+}
+
+svg { fill: currentColor; max-height: 100%; }
+
+.svg-stroke { stroke: currentColor }
+
+img { max-width: 100%; }
+
+//Global link reset
+a {
+  text-decoration: none;
+  color: color('black');
+}
